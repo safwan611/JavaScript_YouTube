@@ -1,3 +1,4 @@
+//CHAPTER : 1 (1 TO 5 VIDEO)
 //hello world
 console.log("hello world")
 //variables
@@ -66,3 +67,4 @@ console.log(student)
 //Q4 :  add new filed in studnet object
 student['friend'] = 'kuldip';
 console.log(student)
+// 
