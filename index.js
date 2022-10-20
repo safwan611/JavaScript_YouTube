@@ -1,70 +1,104 @@
-//CHAPTER : 1 (1 TO 5 VIDEO)
-//hello world
-console.log("hello world")
-//variables
-let a = 97
-b = "safwan"
-console.log(a)
-console.log(b)
-console.log("------------------")
-//var , let , conts
-//var : old js ma use karta hta also called global variable
-// const : constant value ne pass karva mate use thi che
-// let : new js ma use thi che also called blocked variables.
-var a1 = "this"
-let b1 = 5;
-const author = 'kuldip'
-{
-  let b1 = 10
-  console.log(b1)
-}
-console.log(a1)
-console.log(b1)
-console.log(author)
-console.log("------------------")
-//data types
-// 1. primitive data types : null ,  number, string , symbol, undefined, boolean , bigint
-// 2. not primitve data types
-// object
-let a2 = null;
-let b2 = 345;
-let c = true;
-let d = BigInt("567") + BigInt("3")
-let e = "Safwan"
-let f = Symbol("this is symbol")
-let g = undefined
+// // //CHAPTER 3 : LOOPS AND FUNCTIONS
+// // //loops : 
+// // /*
+// // for loop : number of times code ne run karva mate use thi che
+// // */
+// // for(let i = 1;i< 5 ;i++){
+// // console.log("Hello World : " + i)  
+// // }
+// // let sum = 0
+// // let n = prompt("Enter the value of n")
+// // n = Number.parseInt(n)
+// // for (let i = 0; i < n; i++) {
+// //   sum += (i + 1)
+// //   // console.log((i+1), "+")
+// // }
+// // console.log("Sum of first " + n + " natural numbers is " + sum);
 
-console.log(a2, b2, c, d, e, f, g)
-//if we check the datatype of a given variable then use
-console.log(typeof e)
-console.log("------------------")
+// // //for in loop :
 
-//objects : key value paris is called object , real world entity 
-const item = {
-  name: 'safwan',
-  tech: 'php',
-  education: 'be',
+// // let obj = {
+// //   safwan : 85,
+// //   ritika : 75,
+// //   shiv : 35,
+// //   aman : 40,
+// //   ronit : 50
+// // }
+// // for (let a in obj){
+// //   console.log("Marks of "  +a + " are " + obj[a]);
+// // }
+
+// // //for off loop : value ne seprate form ma print karva use thi  che
+// // for(let b of "safwan"){
+// //   console.log(b)
+// // }
+
+// // //while loop and do...while loop
+// // let n = prompt("ENter the value of n")
+// // n = Number.parseInt(n);
+// // let  i = 1
+// // while(i < n){
+// //   console.log(i)
+// //   i++
+// // }
+// //do while loop
+// // let n = prompt("ENter the value of n")
+// // n = Number.parseInt(n);
+// // let i = 0
+// // do{
+// //   console.log(i)
+// //   i++
+// // }while(i<n)
+// const hello = () => {
+//   console.log("Hey how are you. I am toh fine yaar")
+//   return "hi"
+// }
+// //functions 
+// let a = 1;
+// let b = 2;
+// let c = 3;
+
+// function onePlusAverge(x,y){
+//   console.log("Done");
+//   return 1 + (x+y) / 2
+// }
+// const sum = (p, q) => {
+//   return p + q
+// }
+// let v = hello();
+// console.log(v)
+// console.log("Averge " ,onePlusAverge(a,b));
+
+// hello()
+
+//practice test
+//Q1 : Print the marks of a student in object using for loop
+let marks = {
+  safwan : 85,
+  aman : 70,
+  monika : 4,
+  ronit : 50
 }
-//if we get a full object 
-console.log(item);
-//if we get a particular item in object the we use dot(.) operator
-console.log(item.name);
-console.log("------------------")
-//practice set
-//Q1 : create a string and add number
-let value1 = 'safwan'
-let value2 = 6
-console.log(value1 + value2)
-//Q2 : use typesof operator
-console.log(typeof value1)
-//Q3 : const object 
-const student = {
-  name: 'safwan',
-  tech: 'php',
-  education: 'be',
+for(let i = 0; i < Object.keys(marks).length;i++){
+  console.log("The marks of " +Object.keys(marks)[i] + " are " + marks[Object.keys(marks)[i]])
 }
-console.log(student)
-//Q4 :  add new filed in studnet object
-student['friend'] = 'kuldip';
-console.log(student)
-// 
+// Problem No 2
+for (let key in marks) {
+  // console.log("The marks of " + key + " are " + marks[key])
+}
+
+// Problem No 3
+let cn = 43
+let i
+while (i != cn) {
+  console.log("Try again")
+  i = prompt("Enter a number")
+}
+console.log("You have entered a correct number")
+
+// Problem No 4
+const mean = (a, b, c, d) => {
+  return (a + b + c + d) / 4
+}
+
+console.log(mean(4, 5, 6, 7))
