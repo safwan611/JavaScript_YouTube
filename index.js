@@ -1,70 +1,43 @@
-//CHAPTER : 1 (1 TO 5 VIDEO)
-//hello world
-console.log("hello world")
-//variables
-let a = 97
-b = "safwan"
-console.log(a)
-console.log(b)
-console.log("------------------")
-//var , let , conts
-//var : old js ma use karta hta also called global variable
-// const : constant value ne pass karva mate use thi che
-// let : new js ma use thi che also called blocked variables.
-var a1 = "this"
-let b1 = 5;
-const author = 'kuldip'
-{
-  let b1 = 10
-  console.log(b1)
-}
-console.log(a1)
-console.log(b1)
-console.log(author)
-console.log("------------------")
-//data types
-// 1. primitive data types : null ,  number, string , symbol, undefined, boolean , bigint
-// 2. not primitve data types
-// object
-let a2 = null;
-let b2 = 345;
-let c = true;
-let d = BigInt("567") + BigInt("3")
-let e = "Safwan"
-let f = Symbol("this is symbol")
-let g = undefined
+// let name = "Safwan"
+// console.log(name)
+// console.log(name.length)
+// console.log(name[0])
+// console.log(name[1])
+// //template literals
+// let boy1 = "aman"
+// let boy2 = "mamdani"
+// let sentence = `${boy2} is the frnd of ${boy1}`
+// console.log(sentence)
 
-console.log(a2, b2, c, d, e, f, g)
-//if we check the datatype of a given variable then use
-console.log(typeof e)
-console.log("------------------")
+//methods
+// console.log(name.toUpperCase())
+// console.log(name.toLowerCase())
+// console.log(name.slice(2, 4))
+// console.log(name.slice(2))
+// console.log(name.replace("Har", "Per"))
+// let friend = "Naman"
+// console.log(name.concat(" is a friend of ", friend, " Ok"))
+// let friend2 = "      Meena        "
+// console.log(friend2)
+// console.log(friend2.trim())
+let fr = "Harry"
+// console.log(fr[0])
+// console.log(fr[1])
+// console.log(fr[2])
+// console.log(fr[3])
+// fr[4]= "o" // This is not possible 
+// console.log(fr)
+// QuickQuiz: Use a for loop to print a string
+// for (let i = 0; i < fr.length; i++) {
+//   console.log(fr + " numbers " + i);
+// }
 
-//objects : key value paris is called object , real world entity 
-const item = {
-  name: 'safwan',
-  tech: 'php',
-  education: 'be',
-}
-//if we get a full object 
-console.log(item);
-//if we get a particular item in object the we use dot(.) operator
-console.log(item.name);
-console.log("------------------")
 //practice set
-//Q1 : create a string and add number
-let value1 = 'safwan'
-let value2 = 6
-console.log(value1 + value2)
-//Q2 : use typesof operator
-console.log(typeof value1)
-//Q3 : const object 
-const student = {
-  name: 'safwan',
-  tech: 'php',
-  education: 'be',
-}
-console.log(student)
-//Q4 :  add new filed in studnet object
-student['friend'] = 'kuldip';
-console.log(student)
-// 
+let str = "Safwan\""
+console.log(str.length)
+
+console.log(str.toLowerCase());
+
+let str2 = "please give Rs 1000";
+let amount = str2.slice("please give Rs ".length)
+console.log(amount)
