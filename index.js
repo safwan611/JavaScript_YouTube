@@ -1,70 +1,52 @@
-//CHAPTER : 1 (1 TO 5 VIDEO)
-//hello world
-console.log("hello world")
-//variables
-let a = 97
-b = "safwan"
-console.log(a)
-console.log(b)
-console.log("------------------")
-//var , let , conts
-//var : old js ma use karta hta also called global variable
-// const : constant value ne pass karva mate use thi che
-// let : new js ma use thi che also called blocked variables.
-var a1 = "this"
-let b1 = 5;
-const author = 'kuldip'
-{
-  let b1 = 10
-  console.log(b1)
-}
-console.log(a1)
-console.log(b1)
-console.log(author)
-console.log("------------------")
-//data types
-// 1. primitive data types : null ,  number, string , symbol, undefined, boolean , bigint
-// 2. not primitve data types
-// object
-let a2 = null;
-let b2 = 345;
-let c = true;
-let d = BigInt("567") + BigInt("3")
-let e = "Safwan"
-let f = Symbol("this is symbol")
-let g = undefined
+// let marks = [84, 85, 90, 99, 0, 41, 33, "fail", false];
+// marks[10] = 35;
+// console.log(marks);
+// console.log(marks[0]);
+// console.log(marks.length)
+// console.log(marks[10])
+// console.log(typeof marks)
+//array methods
+// let num = [1, 2, 3, 4]
+// let b = num.toString()
+// console.log(b)
+//joins
+// let c = num.join("_")
+// console.log(c, typeof c)
+//pop  method
+// num.pop()
+// console.log(num)
+// num.push()
+// console.log(num)
+// num.shift()
+// console.log(num)
+// num.unshift()
+// console.log(num)
 
-console.log(a2, b2, c, d, e, f, g)
-//if we check the datatype of a given variable then use
-console.log(typeof e)
-console.log("------------------")
+// let num_more = [11, 12, 13, 14, 15, 16, 17, 18, 19]
+// let num_even_more = [211, 212, 213, 214, 415, 416, 417, 418, 419]
+// console.log(num.length)
+// delete num[0]
+// console.log(num.length)
 
-//objects : key value paris is called object , real world entity 
-const item = {
-  name: 'safwan',
-  tech: 'php',
-  education: 'be',
-}
-//if we get a full object 
-console.log(item);
-//if we get a particular item in object the we use dot(.) operator
-console.log(item.name);
-console.log("------------------")
-//practice set
-//Q1 : create a string and add number
-let value1 = 'safwan'
-let value2 = 6
-console.log(value1 + value2)
-//Q2 : use typesof operator
-console.log(typeof value1)
-//Q3 : const object 
-const student = {
-  name: 'safwan',
-  tech: 'php',
-  education: 'be',
-}
-console.log(student)
-//Q4 :  add new filed in studnet object
-student['friend'] = 'kuldip';
-console.log(student)
-// 
+// let newArray = num.concat(num_more, num_even_more)
+// console.log(newArray)
+// console.log(num, num_more)
+
+// sort method
+// let compare = (a, b)=>{
+//   return b - a
+// }
+let num = [551, 22, 3, 14, 5, 6, 7, 8, 229]
+// num.sort(compare)
+// num.reverse()
+// console.log(num)
+
+// Splice and Slice
+// let num = [551, 22, 3, 14, 5, 6, 7, 8, 229]
+// let deletedValues = num.splice(2, 4, 1021, 1022, 1023, 1024, 1025)
+console.log(num)
+// console.log(deletedValues)
+
+// let newNum = num.slice(3)
+let newNum = num.slice(3, 5)
+console.log(newNum)
